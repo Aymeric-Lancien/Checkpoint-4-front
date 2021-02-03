@@ -1,10 +1,14 @@
 import './App.css';
+import PlayerCard from './components/Card/PlayerCard';
+import Header from './components/Header/Header';
+import WelcomeText from './components/WelcomeText/WelcomeText';
 
 function App() {
   return (
     <div className="App">
-      <h1>hello world h1</h1>
-      <h2>hello world h2</h2>
+      <Header />
+      <WelcomeText />
+      <PlayerCard />
     </div>
   );
 }
