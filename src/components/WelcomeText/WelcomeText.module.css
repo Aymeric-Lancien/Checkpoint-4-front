@@ -1,0 +1,11 @@
+.wrapper {
+  width: 75%;
+  margin: 3rem auto;
+}
+
+.bar {
+  height: 1px;
+  width: 75%;
+  background-color: var(--white-text-color);
+  margin: 3rem auto;
+}
