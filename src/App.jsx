@@ -1,15 +1,20 @@
 import './App.css';
-import PlayerCard from './components/Card/PlayerCard';
-import Header from './components/Header/Header';
-import WelcomeText from './components/WelcomeText/WelcomeText';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import CardInfos from './components/CardInfos/CardInfos';
+// 
+// 
+import Home from './views/Home';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <WelcomeText />
-      <PlayerCard />
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/infos/:id" component={CardInfos} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
