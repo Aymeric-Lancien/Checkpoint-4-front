@@ -3,7 +3,7 @@ import axios from 'axios';
 const GetPlayers = ({ setPlayers }) => {
 
   axios
-    .get(`http://localhost:8080/`)
+    .get(`http://localhost:8080`)
     .then((res) => {
       setPlayers(res.data);
     })
