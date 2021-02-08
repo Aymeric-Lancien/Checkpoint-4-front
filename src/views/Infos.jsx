@@ -75,7 +75,7 @@ const Infos = (props) => {
         </div>
         <p>Liste des musiques:</p>
         {infos.map((item) => (
-          <p>{`- ${item.track_name}`}</p>
+          <p key={item.idmorceaux}>{`- ${item.track_name}`}</p>
         ))}
       </div>
     </div>

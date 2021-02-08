@@ -50,7 +50,7 @@ export const PlayerCard = React.memo(function GalaxyCard({ player }) {
   
 
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} key={player_name}>
       <Link to={`/infos/${idguitar_players}`}>
         <Card className={styles.card}>
           <CardMedia classes={mediaStyles} image={picture} />
@@ -64,4 +64,5 @@ export const PlayerCard = React.memo(function GalaxyCard({ player }) {
     </div>
   );
 });
+
 export default PlayerCard;

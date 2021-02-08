@@ -27,7 +27,7 @@ const CardInfos = (props) => {
 
   return (
     <div>
-      <Infos infos={infos} HandleInput={HandleInput} HandleNewTrack={HandleNewTrack} />
+      <Infos infos={infos} HandleInput={HandleInput} HandleNewTrack={HandleNewTrack}  key={infos[0].player_name} />
     </div>
   );
 };
